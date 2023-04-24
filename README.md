@@ -1,5 +1,14 @@
 # Nginx
 
-<blockquote style="background-color: #f9f9f9; border-left: 10px solid #ccc; padding: 0.5em 10px;">
-  This is a customized box created using Markdown and HTML.
-</blockquote>
+1. Serve web pages:
+  server {
+    listen 80;
+    server_name example.com;
+    root /var/www/example.com;
+    index index.html index.htm;
+
+    location / {
+        try_files $uri $uri/ =404;
+    }
+  }
+
