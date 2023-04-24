@@ -1,7 +1,9 @@
 # Nginx
 
 1. Serve web pages:
+
 <blockquote>
+  
   server {
     listen 80;
     server_name example.com;
@@ -12,5 +14,6 @@
         try_files $uri $uri/ =404;
     }
   }
- </blockquote>
+  
+</blockquote>
 
