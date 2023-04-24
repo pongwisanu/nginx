@@ -4,6 +4,7 @@
 
 <blockquote>
   
+  
   server {
   
     listen 80;
@@ -15,6 +16,7 @@
         try_files $uri $uri/ =404;
     }
   }
+  
   
 </blockquote>
 
