@@ -1,0 +1,7 @@
+1. add "scale : ... " in docker compose
+2. run "docker-compose up -d --no-deps --build [app]"
+3. run "docker exec -it [nginx]"
+4. run "docker cp nginx.conf [nginx]:path"
+5. run "docker exec -it [nginx] sh" this will get in docker container
+6. run "nginx -t" to test nginx.conf
+7. run "nginx -s reload"
